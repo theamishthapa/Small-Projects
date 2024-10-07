@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Color Generator</title>
+    <style>
+      .box {
+        border: 2px solid black;
+        height: 100px;
+      }
+
+      #color-change-button {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="color-change-button" onclick="newColor();">Change Color</button>
+    <div class="box" id="container">This is a random color genertor.</div>
+    <script>
+      function randomColorGen() {
+        const hexCharArr = [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+        ];
+
+        let randomColor = "#";
+        const randomHex = Math.floor(Math.random() * 16777215).toString(16);
+        console.log(randomHex);
+        randomColor = randomColor + randomHex;
+        return randomColor;
+        console.log(randomColor);
+      }
+      function newColor() {
+        var changeColor = document.getElementById("container");
+        changeColor.style.backgroundColor = randomColorGen();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const multiply = (num1, num2) => num1 * num2;
+
+      console.log(multiply(2, 3));
+
+      function countPositive(nums) {
+        let count = 0;
+        nums.forEach((element) => {
+          if (element > 0) count++;
+        });
+        return count;
+      }
+      console.log(countPositive([2, -3, 3, 4, 5]));
+
+      function addNum(array, num) {
+        return array.map((value) => value + num);
+      }
+      console.log(addNum([23, 4, 5], 1));
+
+      function removeEgg(foods) {
+        let eggsRemoved = 0;
+
+        return foods.filter((food) => {
+          if (food === "egg" && eggsRemoved < 2) {
+            eggsRemoved++;
+            return false;
+          }
+
+          return true;
+        });
+      }
+
+      console.log(removeEgg(["meat", "egg", "egg", "milk", "egg"]));
+
+      function addNum(array, num) {
+        return array.map((value) => value + num);
+      }
+
+      console.log(addNum([1, 2, 3], 2));
+    </script>
+  </body>
+</html>

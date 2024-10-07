@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arrays and loops</title>
+  </head>
+  <body>
+    <script>
+      /*
+      const myArray = [10, 20, 30]; //arrays
+      console.log(myArray);
+      console.log(myArray[1]); //printing specifiv array value
+
+      myArray[1] = 50; //changing value
+      console.log(myArray);
+
+      const anotherArray = [1, "hello", true, { name: "socks" }[(1, 3)]];
+      console.log(typeof [1, 2]);
+      console.log(Array.isArray(anotherArray));
+
+      console.log(anotherArray.length);
+
+      myArray.push(100); //pushesh new item to array
+      console.log(myArray);
+
+      myArray.splice(0, 3); //remove first index , keep number from another index
+      console.log(myArray);
+      */
+
+      /*
+
+      let i = 1;
+
+      while (i <= 5) {
+        console.log(i);
+        i = i + 1;
+      }
+
+      for (i = 1; i <= 5; i++) {
+        console.log(i);
+      }
+      */
+      /*
+      const todoList = ["make dinner", "wash dishes", "watch youtube"];
+
+      for (let i = 0; i < todoList.length; i++) {
+        const value = todoList[i];
+        console.log(value);
+      }
+      */
+
+      /*
+
+      const nums = [1, 1, 3];
+
+      let total = 0;
+
+      for (let i = 0; i < nums.length; i++) {
+        const num = nums[i];
+        total = total + num;
+      }
+      console.log(total);
+
+      let copyArray = [];
+      for (i = 0; i < nums.length; i++) {
+        const double = 2 * nums[i];
+        copyArray.push(double);
+      }
+      console.log(copyArray);
+      */
+      /*
+
+      const nums = [10, 20, 30];
+      const words = ["amish", "shital", "daffer"];
+
+      function arraySwap(array) {
+        const firstToLast = array[0];
+        const lastToFirst = array[array.length - 1];
+        array[0] = lastToFirst;
+        array[array.length - 1] = firstToLast;
+        console.log(array);
+      }
+
+      arraySwap(nums);
+      arraySwap(words);*/
+
+      /*
+      const nums = [10, 20, 30];
+      const nums2 = [60, 70, 90];
+      const words = ["amish", "shital", "daffer"];
+
+      function addOne(array) {
+        for (let i = 0; i < array.length; i++) {
+          array[i]++;
+        }
+        console.log(array);
+      }
+
+      function addNum(array, num) {
+        for (i = 0; i < array.length; i++) {
+          array[i] = array[i] + num;
+        }
+        console.log(array);
+      }
+
+      let sumOfArray = [];
+      function addArrays(array1, array2) {
+        for (let i = 0; i < array1.length; i++) {
+          sumOfArray.push(array1[i] + array2[i]);
+        }
+        console.log(sumOfArray);
+      }
+
+      addArrays(nums, nums2);
+
+      */
+
+      /*
+      const arrayTest = [-1, 2, -5, 0, 4, 8];
+      const positiveArray = [];
+
+      function countPositive(nums) {
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] > 0) {
+            const copy = nums[i];
+            positiveArray.push(copy);
+          }
+        }
+        return positiveArray.length;
+      }
+
+      console.log(countPositive(arrayTest));
+      
+      const arrayTest = [-1, 9, -5, 0, 4, 8, -100];
+
+      let minNum = 0;
+      let maxNum = 0;
+      function minMax(nums) {
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] > maxNum) {
+            maxNum = nums[i];
+          } else if (nums[i] < minNum) {
+            minNum = nums[i];
+          }
+        }
+        console.log(`min value: ${minNum}`);
+        console.log(`max value: ${maxNum}`);
+      }
+
+      function countWords(words) {}
+      */
+      const array1 = [1, 2, 3];
+      const array2 = array1.slice(); //makes copy of values in array
+      array2.push(4);
+      console.log(array1);
+      console.log(array2);
+
+      const [firstValue, secondValue] = [1, 2, 3];
+
+      for (let i = 1; i <= 10; i++) {
+        if (i === 3) {
+          continue;
+        }
+        console.log(i);
+        if (i == 8) {
+          break;
+        }
+      }
+
+      for (let i = 0; i <= 30; i++) {
+        if (i % 3 === 0) {
+          continue;
+        }
+        console.log(i);
+      }
+    </script>
+  </body>
+</html>

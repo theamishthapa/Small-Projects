@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart quantity</title>
+  </head>
+  <body>
+    Cart Quantity
+    <br />
+    <br />
+
+    <button
+      title="shows you quantity"
+      onclick="
+    console.log(`Cart quantity:    ${cartQuantity}`);"
+    >
+      Show Quantity
+    </button>
+
+    <button
+      onclick="
+    updateCartQuantity(1)        //cartQuantity += 1 is same
+    ;"
+    >
+      Add to Cart
+    </button>
+
+    <button
+      onclick="
+    updateCartQuantity(2);          //cartQuantity += 2 is same
+    ;"
+    >
+      +2
+    </button>
+
+    <button
+      onclick="
+    updateCartQuantity(3);
+    ;"
+    >
+      +3
+    </button>
+
+    <button
+      onclick="
+    
+    console.log(`Cart was reset.`);
+    console.log(`Cart quantity:    ${0}`);
+    cartQuantity = 0
+    ;"
+    >
+      Reset Cart
+    </button>
+
+    <button
+      onclick="
+    updateCartQuantity(-1);"
+    >
+      Remove from Cart
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+
+      function updateCartQuantity(value) {
+        console.log(`Cart quantity:    ${cartQuantity + value}`);
+        cartQuantity = cartQuantity + value;
+      }
+    </script>
+  </body>
+</html>

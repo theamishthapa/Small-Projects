@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booleans</title>
+  </head>
+  <body>
+    <script>
+      /*
+      
+      true
+        false
+        
+
+        console.log(5<10);
+
+        console.log(5==='5');
+
+        if (3*3!=10){
+            console.log('its not equal to nine');
+        } 
+
+        if(false){
+            console.log('hello');
+        }
+        else{
+            console.log('hi');
+        }
+
+
+
+        const age =33
+
+        if (age >= 16){
+            console.log('you can drive');
+        }
+
+        else if (age>=14){
+            console.log('almost eligible');
+        }
+
+            else{
+                console.log('you cant drive');
+         }
+
+
+         */
+
+      /*
+
+
+         if (0){
+            console.log('truthy');   //truthy and falsy
+         }
+
+
+         const cartQuantity = 5;
+         if (cartQuantity){
+            console.log('cart has products');
+         }
+
+         console.log(!0);
+
+         console
+*/
+
+      const result = true ? "truthy" : "falsy";
+      console.log(result); //excuted
+
+      false && console.log("hello"); //not executed cause first condition false
+
+      true && console.log("amish"); //excecuted cuz true
+
+      const message = 5 && "hrllo"; //this is also true
+      console.log(message);
+
+      const currency = undefined || "USD"; //first statement false but another true so second statement executed
+      console.log(currency);
+
+      // || used usually for setting default values
+    </script>
+  </body>
+</html>

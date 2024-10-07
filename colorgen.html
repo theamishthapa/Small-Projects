@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .colorbox {
+        height: 200px;
+        width: 200px;
+        border: px solid black;
+      }
+
+      .put-color {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" placeholder="enter color" class="js-input" />
+      <button class="js-button" onclick="displayColor();">Enter</button>
+    </div>
+
+    <div class="colorbox"></div>
+
+    <script>
+      function getColor() {
+        let textboxElement = document.querySelector(".js-input");
+        let color = textboxElement.value;
+        return color;
+      }
+
+      function displayColor() {
+        let div = document.querySelector(".colorbox");
+        div.classList.add("put-color");
+      }
+    </script>
+  </body>
+</html>
